@@ -1,22 +1,20 @@
 {
-  "name": "wolfsocket",
+  "name": "blacklord-socket",
   "type": "module",
   "version": "1.0.1",
-  "description": "WOLF TECH fork of Baileys with native Group Status (groupStatusMessageV2) support for text, image, video, audio, and sticker posts.",
+  "description": "Blacklord fork of Baileys with native Group Status support for text, image, video, audio, and sticker posts.",
   "keywords": [
     "whatsapp",
     "automation",
     "baileys",
-    "group-status",
-    "wolf-tech",
-    "wolvarex"
+    "group-status"
   ],
-  "homepage": "https://github.com/WOLVAREX/wolfsocket",
+  "homepage": "https://github.com/blacklorddev15/blacklord-socket",
   "repository": {
-    "url": "https://github.com/WOLVAREX/wolfsocket.git"
+    "url": "https://github.com/blacklorddev15/blacklord-socket.git"
   },
   "license": "MIT",
-  "author": "Briton Kiplangat (Silent Wolf) <WOLF TECH>",
+  "author": "Briton Kiplangat",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [

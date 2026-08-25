@@ -1,19 +1,19 @@
-# wolfsocket
+# Blacklord Socket
 
 <p align="center">
-  <img src="./Media/logo.png" alt="wolfsocket logo" width="220">
+  <img src="./Media/logo.png" alt="Blacklord Socket logo" width="220">
 </p>
 
-<p align="center">A WOLF TECH maintained fork of Baileys for WhatsApp automation.</p>
+<p align="center">A Blacklord-maintained fork of Baileys for WhatsApp automation.</p>
 
-A [Baileys](https://github.com/WhiskeySockets/Baileys) fork maintained under **WOLF TECH**, adding native **Group Status** support — posting text, image, video, audio, and sticker updates that are visible only within a specific WhatsApp group (distinct from the regular `status@broadcast` story that goes to your whole contact list).
+A [Baileys](https://github.com/WhiskeySockets/Baileys) fork maintained as **Blacklord Socket**, adding native **Group Status** support — posting text, image, video, audio, and sticker updates that are visible only within a specific WhatsApp group (distinct from the regular `status@broadcast` story that goes to your whole contact list).
 
-> This is a fork, not a replacement. Everything in upstream Baileys works exactly the same — `wolfsocket` adds one new socket method on top: `sock.sendGroupStatus()`.
+> This is a fork, not a replacement. Everything in upstream Baileys works exactly the same — `blacklord-socket` adds one new socket method on top: `sock.sendGroupStatus()`.
 
 ## Install
 
 ```bash
-npm install wolfsocket
+npm install blacklord-socket
 ```
 
 ## Quick start
@@ -21,7 +21,7 @@ npm install wolfsocket
 Usage is identical to upstream Baileys — same `makeWASocket`, same auth flow, same `sendMessage`. The only addition is `sock.sendGroupStatus()`:
 
 ```js
-import makeWASocket, { useMultiFileAuthState } from 'wolfsocket'
+import makeWASocket, { useMultiFileAuthState } from 'blacklord-socket'
 
 const { state, saveCreds } = await useMultiFileAuthState('auth_info')
 const sock = makeWASocket({ auth: state })
@@ -114,4 +114,4 @@ Returns a `Promise<WAMessage>` with the sent message's key.
 
 ## License
 
-MIT — see [LICENSE](./LICENSE). This package is a modified fork of [Baileys](https://github.com/WhiskeySockets/Baileys) by Rajeh Taher / WhiskeySockets, used under its original MIT license. The original copyright notice is preserved in full; modifications and additions (including Group Status support) by Briton Kiplangat (Silent Wolf) / WOLF TECH are licensed under the same terms.
+MIT — see [LICENSE](./LICENSE). This package is a modified fork of [Baileys](https://github.com/WhiskeySockets/Baileys) by Rajeh Taher / WhiskeySockets, used under its original MIT license. The original copyright notice is preserved in full; modifications and additions (including Group Status support) by Briton Kiplangat are licensed under the same terms.
